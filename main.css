@@ -2,55 +2,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-    margin: 80px auto;
-    max-width: 640px;
+    margin: 100px auto;
+    max-width: 320px;
     width: 100%;
 }
 
 form {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
-input, textarea, button {
+input, button {
     display: block;
     padding: 8px;
     margin-bottom: 8px;
     width: 100%;
-    resize: none;
 }
 
 button {
-    background-color: #2ecc71;
+    background-color: #2e5dcc;
+    color: #fff;
     border: none;
     text-transform: uppercase;
-    color: #fff;
+    cursor: pointer;
     font-weight: bold;
     font-size: 18px;
     font-style: italic;
-    cursor: pointer;
 }
 
 button:hover {
-    background-color: #27ae60;
+    background-color: #3e97e4;
 }
 
 .success-message {
-    background-color: #2ecc71;
+    background-color: #1a924c;
     color: #fff;
     padding: 16px;
     display: none;
 }
 
 .error-message {
-    background-color: red;
+    background-color: rgb(142, 15, 15);
+    color: #fff;
+    padding: 16px;
+    display: none;
+}
+
+.invalid {
+    color: rgb(142, 15, 15);
+    outline-color: rgb(142, 15, 15);
+    border-color: rgb(142, 15, 15);
+}
+
+.valid {
+    color: rgb(15, 142, 40);
+    outline-color: rgb(15, 142, 40);
+    border-color: rgb(15, 142, 40);
+}
+
+.invalid-message {
+    background-color: rgb(142, 15, 15);
     display: none;
     color: #fff;
     font-size: 12px;
@@ -58,8 +72,11 @@ button:hover {
     margin-bottom: 8px;
 }
 
-.error {
-    color: red;
-    outline-color: red;
-    border-color: red;
+.valid-message {
+    background-color: rgb(15, 142, 40);
+    display: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px;
+    margin-bottom: 8px;
 }
