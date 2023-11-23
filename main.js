@@ -51,8 +51,8 @@ campoA.addEventListener('input', function(event) {
 form.addEventListener('submit', function(event){
     event.preventDefault();
 
-    const mensagemSucesso = `Número do campo B: <b>${campoB.value}</b> é maior que o número do campo A: <b>${campoA.value}`;
-    const mensagemErro = `Número do campo B: <b>${campoB.value}</b>, <b>NÃO</b> é maior que o número do campo A: <b>${campoA.value}`;
+    const mensagemSucesso = `O segundo número: <b>${campoB.value}</b> é maior que o primeiro número: <b>${campoA.value}`;
+    const mensagemErro = `O primeiro número: <b>${campoB.value}</b> <b>NÃO</b> é maior que o primeiro número: <b>${campoA.value}`;
 
     validForm = validaCampoB(campoA.value, campoB.value)
     
