@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JavaScript</title>
+    <title>Validador</title>
     <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
     <div class="container">
-        <h1>Formulário</h1>
+        <h1>Validador</h1>
         <form id="form">
             <input type="number" id="campoA" required placeholder="Primeiro número" />
             <input type="number" id="campoB" required placeholder="Segundo número" />
-            <p class="invalid-message">O segundo número precisa ser maior que o primeiro ❌</p>
-            <p class="valid-message"> O segundo é maior que o primeiro ✅</p>
+            <p class="invalid-message">O segundo número não é maior que o primeiro ❌</p>
+            <p class="valid-message"> O segundo número é maior que o primeiro ✅</p>
             <button type="submit" id="btn-validar">Validar</button>
         </form>
         <p class="success-message"></p>
