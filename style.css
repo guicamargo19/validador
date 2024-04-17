@@ -6,11 +6,12 @@
 }
 
 .container {
-    margin: 100px auto;
+    margin: 0 auto;
     max-width: 320px;
     width: 100%;
     padding: 16px;
-    border: 1px solid black;
+    border: 1px solid #0b245f;
+    margin-top: 80px;
 }
 
 .container h1 {
@@ -36,7 +37,6 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
-
 }
 
 button:hover {
@@ -85,4 +85,19 @@ button:hover {
     font-size: 12px;
     padding: 8px;
     margin-bottom: 8px;
+}
+
+.direitos {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.direitos a {
+    text-decoration: none;
+    color: black;
+}
+
+.direitos a:hover {
+    text-decoration: none;
+    color: #708090;
 }
